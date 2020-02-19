@@ -25,4 +25,4 @@ COPY ["log", "/workspace/log/"]
 COPY ["main.py", "requirements.txt", "user_agents.txt", "/workspace/"]
 
 # CMD似乎有一些奇怪的bug
-ENTRYPOINT ["python", "/workspace/main.py", "-c", "/app/config.ini"]
+ENTRYPOINT ["python", "/workspace/main.py", "-m", "-c", "/app/config.ini"]
